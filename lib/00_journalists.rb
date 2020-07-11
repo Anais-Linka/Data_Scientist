@@ -11,8 +11,8 @@ puts "Le handle le plus court est #{twitter.min_by(&:length)}."
 #Combien y-a-t'il de handle contenant 5 caractères (le @ ne compte pas pour un caractère) :
 
 n=0
- twitter.each do |twitter|
- 	if twitter.length == 6
+ twitter.each do |i|
+ 	if i.length == 6
  		n +=1
  	end
  end
@@ -23,13 +23,13 @@ n=0
 
 up = 0
 
- twitter.each do |twitter|
- 	if twitter[1] == twitter[1].upcase
+ twitter.each do |i|
+ 	if i[1] == i[1].upcase
  		up += 1
  	end
  end
 
- puts "Dans ce tableau, #{up} handle qui commencent par une majuscule"
+ puts "Dans ce tableau, #{up} handle commencent par une majuscule."
 
 
 #Trie la liste de handle par ordre alphabétique.
@@ -45,39 +45,4 @@ puts twitter.sort_by { |word| word.length }
 puts "L'email se trouve à la #{twitter.index("@epenser")} ème place"
 
 # Sors-moi une répartition des handle par taille de ces derniers (nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)
- 
-puts "Handle de 1 caractères  : #{twitter.select {|word| word.length == 1}}"
-puts "Handle de 2 caractères  : #{twitter.select {|word| word.length == 2}}"
-puts "Handle de 3 caractères  : #{twitter.select {|word| word.length == 3}}"
-puts "Handle de 4 caractères  : #{twitter.select {|word| word.length == 4}}"
-puts "Handle de 5 caractères  : #{twitter.select {|word| word.length == 5}}"
-puts "Handle de 6 caractères  : #{twitter.select {|word| word.length == 6}}"
-puts "Handle de 7 caractères  : #{twitter.select {|word| word.length == 7}}"
-puts "Handle de 8 caractères  : #{twitter.select {|word| word.length == 8}}"
-puts "Handle de 9 caractères  : #{twitter.select {|word| word.length == 9}}"
-puts "Handle de 10 caractères  : #{twitter.select {|word| word.length == 10}}"
-puts "Handle de 11 caractères  : #{twitter.select {|word| word.length == 11}}"
-puts "Handle de 12 caractères  : #{twitter.select {|word| word.length == 12}}"
-puts "Handle de 13 caractères  : #{twitter.select {|word| word.length == 13}}"
-puts "Handle de 14 caractères  : #{twitter.select {|word| word.length == 14}}"
-puts "Handle de 15 caractères  : #{twitter.select {|word| word.length == 15}}"
-puts "Handle de 16 caractères  : #{twitter.select {|word| word.length == 16}}"
-puts "Handle de 17 caractères  : #{twitter.select {|word| word.length == 17}}"
-puts "Handle de 18 caractères  : #{twitter.select {|word| word.length == 18}}"
-puts "Handle de 19 caractères  : #{twitter.select {|word| word.length == 19}}"
-puts "Handle de 20 caractères  : #{twitter.select {|word| word.length == 20}}"
-puts "Handle de 21 caractères  : #{twitter.select {|word| word.length == 21}}"
-puts "Handle de 22 caractères  : #{twitter.select {|word| word.length == 22}}"
-puts "Handle de 23 caractères  : #{twitter.select {|word| word.length == 23}}"
-puts "Handle de 24 caractères  : #{twitter.select {|word| word.length == 24}}"
-puts "Handle de 25 caractères  : #{twitter.select {|word| word.length == 25}}"
-puts "Handle de 26 caractères  : #{twitter.select {|word| word.length == 26}}"
-puts "Handle de 27 caractères  : #{twitter.select {|word| word.length == 27}}"
-puts "Handle de 28 caractères  : #{twitter.select {|word| word.length == 28}}"
-puts "Handle de 29 caractères  : #{twitter.select {|word| word.length == 29}}"
-puts "Handle de 30 caractères  : #{twitter.select {|word| word.length == 30}}"
-puts "Handle de 31 caractères  : #{twitter.select {|word| word.length == 31}}"
-puts "Handle de 32 caractères  : #{twitter.select {|word| word.length == 32}}"
-puts "Handle de 33 caractères  : #{twitter.select {|word| word.length == 33}}"
-
  
